@@ -1,15 +1,18 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Route, Routes } from "react-router-dom";
+import { Sidebar } from "./components";
+import { Discover } from "./pages";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <h1 className='text-4xl text-white'>Spotify Clone App</h1>
-      </header>
+    <div className="flex relative">
+      <Sidebar />
+      <div className="flex-1 bg-sky-900">
+        <Routes>
+          <Route path="/" element={<Discover />} />
+        </Routes>
+      </div>
     </div>
   );
 }
