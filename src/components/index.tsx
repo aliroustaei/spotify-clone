@@ -1,3 +1,4 @@
 import Sidebar from "./Sidebar/Sidebar";
+import SongCard from "./SongCard";
 
-export { Sidebar };
+export { Sidebar, SongCard};
