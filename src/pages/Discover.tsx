@@ -2,51 +2,7 @@ import React from "react";
 // import { useGetChartListQuery } from "../redux/services/shazam";
 import { SongCard } from "../components";
 import { girl } from "../assets";
-
-const dummyData = [
-  {
-    id: "1",
-    title: "Ginseng Strip 2002",
-    subtitle: "Yung Lean",
-    img: "https://is4-ssl.mzstatic.com/image/thumb/Features125/v4/45/87/f9/4587f9b0-8bfd-91f2-f920-a665073f1607/pr_source.png/800x800cc.jpg",
-  },
-  {
-    id: "2",
-    title: "Ginseng Strip 2002",
-    subtitle: "Yung Lean",
-    img: "https://is4-ssl.mzstatic.com/image/thumb/Features125/v4/45/87/f9/4587f9b0-8bfd-91f2-f920-a665073f1607/pr_source.png/800x800cc.jpg",
-  },
-  {
-    id: "3",
-    title: "Ginseng Strip 2002",
-    subtitle: "Yung Lean",
-    img: "https://is4-ssl.mzstatic.com/image/thumb/Features125/v4/45/87/f9/4587f9b0-8bfd-91f2-f920-a665073f1607/pr_source.png/800x800cc.jpg",
-  },
-  {
-    id: "4",
-    title: "Ginseng Strip 2002",
-    subtitle: "Yung Lean",
-    img: "https://is4-ssl.mzstatic.com/image/thumb/Features125/v4/45/87/f9/4587f9b0-8bfd-91f2-f920-a665073f1607/pr_source.png/800x800cc.jpg",
-  },
-  {
-    id: "5",
-    title: "Ginseng Strip 2002",
-    subtitle: "Yung Lean",
-    img: "https://is4-ssl.mzstatic.com/image/thumb/Features125/v4/45/87/f9/4587f9b0-8bfd-91f2-f920-a665073f1607/pr_source.png/800x800cc.jpg",
-  },
-  {
-    id: "6",
-    title: "Ginseng Strip 2002",
-    subtitle: "Yung Lean",
-    img: "https://is4-ssl.mzstatic.com/image/thumb/Features125/v4/45/87/f9/4587f9b0-8bfd-91f2-f920-a665073f1607/pr_source.png/800x800cc.jpg",
-  },
-  {
-    id: "7",
-    title: "Ginseng Strip 2002",
-    subtitle: "Yung Lean",
-    img: "https://is4-ssl.mzstatic.com/image/thumb/Features125/v4/45/87/f9/4587f9b0-8bfd-91f2-f920-a665073f1607/pr_source.png/800x800cc.jpg",
-  },
-];
+import { dummyData } from "../dummyData";
 
 export default function Discover() {
   // const { data } = useGetChartListQuery(null);
@@ -72,12 +28,12 @@ export default function Discover() {
       </div>
 
       <div className="mt-4">
-        <h3 className="text-primary-dark text-2xl font-medium mb-4">
+        <h3 className="text-primary-dark text-xl font-medium mb-4">
           Trending
         </h3>
         <div className="grid grid-cols-3 gap-4">
-          {dummyData.map((item) => (
-            <SongCard key={item.id} title={item.title} subTitle={item.subtitle} imgUrl={item.img}/>
+          {dummyData.tracks.map((item,i) => (
+            <SongCard key={i} title={item.title} subTitle={item.subtitle} imgUrl={item.images.background}/>
           ))}
         </div>
       </div>

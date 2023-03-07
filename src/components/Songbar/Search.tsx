@@ -12,7 +12,7 @@ export default function Search() {
           type="text"
           id="search-field"
           placeholder="Type here to search"
-          className="w-full bg-transparent border-none placeholder-primary-light outline-none text-base p-2"
+          className="w-full bg-transparent border-none placeholder-primary-light placeholder:text-sm outline-none text-base p-2"
         />
       </div>
     </form>

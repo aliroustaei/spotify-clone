@@ -26,3 +26,14 @@ ul {
   scrollbar-width: none; /* Firefox */
 }
 
+.text-ellips {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; 
+  -webkit-box-orient: vertical;
+}
+
+.clip-bottom {
+  clip-path: polygon(100% 50%, 0 0, 100% 0, 50% 100%, 0 0)
+}
