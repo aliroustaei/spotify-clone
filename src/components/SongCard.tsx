@@ -13,9 +13,9 @@ export default function SongCard({imgUrl, title,subTitle}:songCardProps) {
       <img
         alt="song_img"
         src={imgUrl}
-        className="w-full h-full rounded-lg object-cover"
+        className="w-full h-full rounded-3xl object-cover"
       />
-      <div className="p-2 flex justify-between items-center absolute bottom-2 left-1/2 transform -translate-x-1/2 w-[90%] bg-purple-600/30 backdrop-blur-md rounded-lg overflow-hidden">
+      <div className="p-2 flex justify-between items-center absolute bottom-2 left-1/2 transform -translate-x-1/2 w-[90%] bg-purple-600/30 backdrop-blur-md rounded-2xl overflow-hidden">
         <div className="text-white">
           <h5 className="text-sm">{title}</h5>
           <h6 className="text-xs">{subTitle}</h6>

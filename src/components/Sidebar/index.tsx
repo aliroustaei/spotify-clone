@@ -13,7 +13,7 @@ const menuLinks = [
 
 export default function Sidebar() {
   return (
-    <aside className="w-[240px] bg-primary-main h-[100vh] p-4 text-gray-400 backdrop-blur-lg">
+    <aside className="w-[240px] bg-primary-dark h-[100vh] p-4 text-gray-400 backdrop-blur-lg">
       <Avatar avatar={avatar} avatarName="Ali Roustaei" />
       <Menu menuItem={menuLinks} menuLabel="Menu" />
       <Menu menuItem={menuLinks} menuLabel="Library" />

@@ -18,7 +18,7 @@ export default function Menu({ menuItem, menuLabel }: menuProps) {
       <ul className="space-y-2">
         {menuItem.map((item) => (
           <li
-            className={`flex items-center gap-4 ${
+            className={`flex items-center gap-4 text-sm ${
               item.active && "text-gray-100"
             }`}
           >
